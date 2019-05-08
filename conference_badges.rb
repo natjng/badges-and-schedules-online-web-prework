@@ -16,6 +16,6 @@ end
 
 def printer(attendees)
   attendees.map
-    puts batch_badge_creator(attendees)
+    puts batch_badge_creator(attendees.each)
     return assign_rooms(attendees)
 end
