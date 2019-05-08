@@ -15,6 +15,7 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  batch_badge_creator(attendees)
+  batch_badge_creator.each(attendees) do |person| puts person.join("-n")
+  end
   assign_rooms(attendees)
 end
